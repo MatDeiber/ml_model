@@ -1,0 +1,4 @@
+artifact_location: file:///mnt/d/Project/Coastal_Web_App/ml_model/notebooks/mlruns/2
+experiment_id: '2'
+lifecycle_stage: active
+name: coastal_app_experiment_trainer
