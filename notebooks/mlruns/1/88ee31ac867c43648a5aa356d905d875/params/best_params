@@ -1,0 +1,1 @@
+{'model__dropout': 0.18, 'model__optimizer': 'adam'}

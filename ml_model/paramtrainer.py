@@ -59,7 +59,7 @@ class ParamTrainer(MLFlowBase):
                 param_grid=hyper_params,
                 cv=5,
                 verbose = 1,
-                scoring = 'neg_mean_squared_error')
+                scoring = 'neg_mean_absolute_error')
 
             
             # train with gridsearch

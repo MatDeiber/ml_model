@@ -2,7 +2,7 @@
 from ml_model.data import get_data
 from ml_model.model import get_model
 from ml_model.pipeline import get_pipeline
-from ml_model.metrics import compute_rmse
+from ml_model.metrics import compute_rmse,compute_mae
 from ml_model.mlflow import MLFlowBase
 from mlflow.tracking import MlflowClient
 import joblib
@@ -41,13 +41,13 @@ class Trainer(MLFlowBase):
         y_pred = pipeline.predict(X_test)
 
         # evaluate metrics
-        rmse = compute_rmse(y_pred, y_test)
+        score = compute_mae(y_pred, y_test)
 
         # save the trained model
         joblib.dump(pipeline, "model_best.joblib")
 
         # push metrics to mlflow
-        self.mlflow_log_metric("rmse", rmse)
+        self.mlflow_log_metric("mae", score)
 
         # return the gridsearch in order to identify the best estimators and params
         return pipeline

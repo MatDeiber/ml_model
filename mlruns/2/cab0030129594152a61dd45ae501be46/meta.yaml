@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/d/Project/Coastal_Web_App/ml_model/notebooks/mlruns/2/cab0030129594152a61dd45ae501be46/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: cab0030129594152a61dd45ae501be46
+run_uuid: cab0030129594152a61dd45ae501be46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643763750057
+status: 1
+tags: []
+user_id: unknown
